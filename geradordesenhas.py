@@ -39,6 +39,15 @@ for word in key:
     elif word in "6": password += "g"
     elif word in "7": password += "h"
     elif word in "8": password += "g"
-    elif word in "9": password += "i"
+    elif word in "{": password += "||"
+    elif word in "}": password += "&"
+    elif word in "[": password += "("
+    elif word in "]": password += ")"
+    elif word in "/": password += "__"
+    elif word in ";": password += "//"
+    elif word in ":": password += "<"
+    elif word in ",": password += ">"
+    elif word in ".": password += ","
+    elif word in "-": password += "¨¨"
 
 print(f"Aqui está sua senha: {password}")
